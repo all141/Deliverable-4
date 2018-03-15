@@ -10,17 +10,3 @@ DECRIPTION: Ensure the text
 EXECUTION STEPS: assertTextPresent(Used for CS1632 Software Quality Assurance, taught by Bill Laboon)
 EXPECTED BEHAVIOR: Text is present.
 
-IDENTIFIER: HOMEPAGE-WELCOME-RETURNS-TEST
-DECRIPTION: Ensure the text 
-               "Welcome, friend, to a land of pure calculation\n"
-              Is not present.
-EXECUTION STEPS: assertTextNotPresent(Welcome, friend, to a land for pure calculation\n)
-EXPECTED BEHAVIOR: Text is not present.
-
-IDENTIFIER: HOMEPAGE-CLASS-RETURNS-TEST
-DECRIPTION: Ensure the text 
-               "Used for CS1632 Software Quality Assurance, taught by Bill Laboon\n"
-              Is not present.
-EXECUTION STEPS: assertTextNotPresent(Used for CS1632 Software Quality Assurance, taught by Bill Laboon\n)
-EXPECTED BEHAVIOR: Text is not present.
-

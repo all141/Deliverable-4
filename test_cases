@@ -1,22 +1,14 @@
 IDENTIFIER: HOMEPAGE-WELCOME-MESSAGE-TEST
 DECRIPTION: Ensure the text 
-               "Welcome, friend, to a land of pure calculation"
-               as well as 
-               "Used for CS1632 Software Quality Assurance, taught by Bill Laboon". is displayed.
-PRECONDITIONS: Game is running
-              No seed was inputted
-EXECUTION STEPS: 
-POSTCONDITIONS: 6x6 matrix and "S" are both visible before and after an iteration
+               "Welcome, friend, to a land of pure calculation" is displayed
+EXECUTION STEPS: assertTextPresent(Welcome, friend, to a land of pure calculation)
+EXPECTED BEHAVIOR: Text is present.
 
 IDENTIFIER: HOMEPAGE-CLASS-MESSAGE-TEST
 DECRIPTION: Ensure the text 
-               "Welcome, friend, to a land of pure calculation"
-               as well as 
-               "Used for CS1632 Software Quality Assurance, taught by Bill Laboon". is displayed.
-PRECONDITIONS: Game is running
-              No seed was inputted
-EXECUTION STEPS: 
-POSTCONDITIONS: 6x6 matrix and "S" are both visible before and after an iteration
+               "Used for CS1632 Software Quality Assurance, taught by Bill Laboon" is displayed
+EXECUTION STEPS: assertTextPresent(Used for CS1632 Software Quality Assurance, taught by Bill Laboon)
+EXPECTED BEHAVIOR: Text is present.
 
 IDENTIFIER: HOMEPAGE-RETURNS-TEST
 DECRIPTION: Ensure the text 

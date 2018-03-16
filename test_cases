@@ -1,12 +1,59 @@
+FOR OUR REFERENCE
+
 IDENTIFIER: HOMEPAGE-WELCOME-MESSAGE-TEST
 DECRIPTION: Ensure the text 
                "Welcome, friend, to a land of pure calculation" is displayed
+PRECONDITIONS: ON HOMEPAGE
 EXECUTION STEPS: assertTextPresent(Welcome, friend, to a land of pure calculation)
 EXPECTED BEHAVIOR: Text is present.
 
 IDENTIFIER: HOMEPAGE-CLASS-MESSAGE-TEST
 DECRIPTION: Ensure the text 
                "Used for CS1632 Software Quality Assurance, taught by Bill Laboon" is displayed
+PRECONDITIONS: ON HOMEPAGE
 EXECUTION STEPS: assertTextPresent(Used for CS1632 Software Quality Assurance, taught by Bill Laboon)
 EXPECTED BEHAVIOR: Text is present.
+----------------------------------------------------------------------------------------------------  2
+IDENTIFIER: LINKBAR-HOMEPAGE-TEST
+DECRIPTION: Ensure the link
+               "CS1632 D3 Home" links to "https://cs1632ex.herokuapp.com/"
+PRECONDITIONS:ON HOMEPAGE
+EXECUTION STEPS: Click on "CS1632 D3 Home"
+                    assertLocation(https://cs1632ex.herokuapp.com/)
+EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/"
+
+IDENTIFIER: LINKBAR-CATHY-TEST
+DECRIPTION: Ensure the link
+               "Cathedral Pics" links to "https://cs1632ex.herokuapp.com/cathy/"
+PRECONDITIONS:ON HOMEPAGE
+EXECUTION STEPS: Click on "Cathedral Pics"
+                    assertLocation(https://cs1632ex.herokuapp.com/cathy)
+EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/cathy"
+
+IDENTIFIER: LINKBAR-HELLO-TEST
+DECRIPTION: Ensure the link
+               "Hello" links to "https://cs1632ex.herokuapp.com/hello"
+PRECONDITIONS:ON HOMEPAGE
+EXECUTION STEPS: Click on "Hello"
+                    assertLocation(https://cs1632ex.herokuapp.com/hello)
+EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/hello"
+
+IDENTIFIER: LINKBAR-FACT-TEST
+DECRIPTION: Ensure the link
+               "Factorial" links to "https://cs1632ex.herokuapp.com/fact"
+PRECONDITIONS:ON HOMEPAGE
+EXECUTION STEPS: Click on "Factorial"
+                    assertLocation(https://cs1632ex.herokuapp.com/fact)
+EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/fact"
+
+IDENTIFIER: LINKBAR-FIB-TEST
+DECRIPTION: Ensure the link
+               "Fibonnaci" links to "https://cs1632ex.herokuapp.com/fib"
+PRECONDITIONS:ON HOMEPAGE
+EXECUTION STEPS: Click on "Fibonnaci"
+                    assertLocation(https://cs1632ex.herokuapp.com/fib)
+EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/fib"
+------------------------------------------------------------------------------------7
+
+
 

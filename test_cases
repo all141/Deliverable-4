@@ -1,21 +1,21 @@
 FOR OUR REFERENCE
 
 IDENTIFIER: HOMEPAGE-WELCOME-MESSAGE-TEST
-DECRIPTION: Ensure the text 
+DESCRIPTION: Ensure the text 
                "Welcome, friend, to a land of pure calculation" is displayed
 PRECONDITIONS: ON HOMEPAGE
 EXECUTION STEPS: assertTextPresent(Welcome, friend, to a land of pure calculation)
 EXPECTED BEHAVIOR: Text is present.
 
 IDENTIFIER: HOMEPAGE-CLASS-MESSAGE-TEST
-DECRIPTION: Ensure the text 
+DESCRIPTION: Ensure the text 
                "Used for CS1632 Software Quality Assurance, taught by Bill Laboon" is displayed
 PRECONDITIONS: ON HOMEPAGE
 EXECUTION STEPS: assertTextPresent(Used for CS1632 Software Quality Assurance, taught by Bill Laboon)
 EXPECTED BEHAVIOR: Text is present.
 ----------------------------------------------------------------------------------------------------  2
 IDENTIFIER: LINKBAR-HOMEPAGE-TEST
-DECRIPTION: Ensure the link
+DESCRIPTION: Ensure the link
                "CS1632 D3 Home" links to "https://cs1632ex.herokuapp.com/"
 PRECONDITIONS:ON HOMEPAGE
 EXECUTION STEPS: Click on "CS1632 D3 Home"
@@ -23,7 +23,7 @@ EXECUTION STEPS: Click on "CS1632 D3 Home"
 EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/"
 
 IDENTIFIER: LINKBAR-CATHY-TEST
-DECRIPTION: Ensure the link
+DESCRIPTION: Ensure the link
                "Cathedral Pics" links to "https://cs1632ex.herokuapp.com/cathy/"
 PRECONDITIONS:ON HOMEPAGE
 EXECUTION STEPS: Click on "Cathedral Pics"
@@ -31,7 +31,7 @@ EXECUTION STEPS: Click on "Cathedral Pics"
 EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/cathy"
 
 IDENTIFIER: LINKBAR-HELLO-TEST
-DECRIPTION: Ensure the link
+DESCRIPTION: Ensure the link
                "Hello" links to "https://cs1632ex.herokuapp.com/hello"
 PRECONDITIONS:ON HOMEPAGE
 EXECUTION STEPS: Click on "Hello"
@@ -39,7 +39,7 @@ EXECUTION STEPS: Click on "Hello"
 EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/hello"
 
 IDENTIFIER: LINKBAR-FACT-TEST
-DECRIPTION: Ensure the link
+DESCRIPTION: Ensure the link
                "Factorial" links to "https://cs1632ex.herokuapp.com/fact"
 PRECONDITIONS:ON HOMEPAGE
 EXECUTION STEPS: Click on "Factorial"
@@ -47,7 +47,7 @@ EXECUTION STEPS: Click on "Factorial"
 EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/fact"
 
 IDENTIFIER: LINKBAR-FIB-TEST
-DECRIPTION: Ensure the link
+DESCRIPTION: Ensure the link
                "Fibonnaci" links to "https://cs1632ex.herokuapp.com/fib"
 PRECONDITIONS:ON HOMEPAGE
 EXECUTION STEPS: Click on "Fibonnaci"
@@ -55,7 +55,7 @@ EXECUTION STEPS: Click on "Fibonnaci"
 EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/fib"
 ------------------------------------------------------------------------------------7
 IDENTIFIER: FACT-ONE-TEST
-DECRIPTION: Ensure the Factorial Page returns 1 when calculating factorial of 1
+DESCRIPTION: Ensure the Factorial Page returns 1 when calculating factorial of 1
 PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fact"
 EXECUTION STEPS: Click on input bar
                     enter 1
@@ -63,7 +63,7 @@ EXECUTION STEPS: Click on input bar
 EXPECTED BEHAVIOR: Screen displays: "Factorial of 1 is 1!"
 
 IDENTIFIER: FACT-FIVE-TEST
-DECRIPTION: Ensure the Factorial Page returns 120 when calculating factorial of 5
+DESCRIPTION: Ensure the Factorial Page returns 120 when calculating factorial of 5
 PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fact"
 EXECUTION STEPS: Click on input bar
                     enter 5
@@ -71,13 +71,38 @@ EXECUTION STEPS: Click on input bar
 EXPECTED BEHAVIOR: Screen displays: "Factorial of 5 is 120!"
 
 IDENTIFIER: FACT-100-TEST
-DECRIPTION: Ensure the Factorial Page returns "Value of 100!" when calculating factorial of 10
+DESCRIPTION: Ensure the Factorial Page returns "Value of 100!" when calculating factorial of 10
 PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fact"
 EXECUTION STEPS: Click on input bar
                     enter 100
                     click submit
 EXPECTED BEHAVIOR: Screen displays: "Factorial of 100 is [100!]!"
 -------------------------------------------------------------------------------------------10
+IDENTIFIER: FIB-ONE-TEST
+DESCRIPTION: Ensure the Fibonacci Page returns 1 when calculating fibonacci of 1
+PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Click on input bar
+                    enter 1
+                    click submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 1 is 1!"
+
+IDENTIFIER: FIB-FIVE-TEST
+DESCRIPTION: Ensure the Fibonacci Page returns 8 when calculating fibonacci of 5
+PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Click on input bar
+                    enter 5
+                    click submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 5 is 8!"
+
+IDENTIFIER: FIB-100-TEST*************************************INCOMPLETE
+DESCRIPTION: Ensure the Fibonacci Page returns IDK when calculating fibonacci of 100
+PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Click on input bar
+                    enter 100
+                    click submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 5 is IDK!"
+---------------------------------------------------------------------------------------13
+
 
 
 

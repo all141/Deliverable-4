@@ -431,6 +431,8 @@
 </tr>
 <tr><td>assertTextPresent</td><td><datalist><option></option></datalist></td><td>3</td>
 </tr>
+<tr><td>assertElementPresent</td><td>//ol<datalist><option>//ol</option><option>css=ol</option></datalist></td><td></td>
+</tr>
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
@@ -446,6 +448,18 @@
 <tr><td>assertVisible</td><td>//img[@alt='Alpenglow Cathedral']<datalist><option>//img[@alt='Alpenglow Cathedral']</option><option>//li[2]/img</option><option>css=img[alt="Alpenglow Cathedral"]</option></datalist></td><td></td>
 </tr>
 <tr><td>assertVisible</td><td>//img[@alt='Old Cathedral']<datalist><option>//img[@alt='Old Cathedral']</option><option>//li[3]/img</option><option>css=img[alt="Old Cathedral"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">IMAGES-IN-LIST</td></tr>
+</thead>
+<tbody>
+<tr><td>assertElementPresent</td><td>//ol/li/img[@alt='Sunny Cathedral']<datalist><option>//ol/li</option><option>css=ol &gt; li</option><option>//ol/li/img[@alt='SunnyCathedral']</option><option>//ol/li/img[@alt='Sunny Cathedral']</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>//ol/li[2]/img[@alt='Alpenglow Cathedral']<datalist><option>//img[@alt='Alpenglow Cathedral']</option><option>//li[2]/img</option><option>css=img[alt="Alpenglow Cathedral"]</option><option>//ol/li[2]/img[@alt='Alpenglow Cathedral']</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>//ol/li[3]/img[@alt='Old Cathedral']<datalist><option>//ol/li[2]/img[@alt='Alpenglow Cathedral']</option><option>//img[@alt='Alpenglow Cathedral']</option><option>//li[2]/img</option><option>css=img[alt="Alpenglow Cathedral"]</option><option>//ol/li[2]/img[@alt='Old Cathedral']</option><option>//ol/li[3]/img[@alt='Old Cathedral']</option></datalist></td><td></td>
 </tr>
 </tbody></table>
 </body>

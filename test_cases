@@ -187,9 +187,40 @@ EXPECTED BEHAVIOR: Screen Displays "Factorial of String is 1!"
 
 IDENTIFIER: HELLO-MESSAGE-TEST
 DESCRIPTION: Ensure that the when the user open the /hello page without a trailing URL value that the message "Hello CS1632, from Prof. Laboon!" is displayed
-PRECONDITIONS: ON ON "https://cs1632ex.herokuapp.com/"
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
 EXECUTION STEPS: Click on the Hello link at the top of the page
 EXPECTED BEHAVIOR: Screen displays: "Hello CS1632, from Prof. Laboon!"
 
 ----------------------------------------------------------------------------------------------24
 
+IDENTIFIER: HELLO-EXTED-1234-TEST
+DESCRIPTION: Ensure that when the /hello page is opened with a numeric trailing URL value that the message "Hello CS 1632, from 1234!" is displayed
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/1234"
+EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from 1234!"
+
+IDENTIFIER: HELLO-EXTED-CAT-TEST
+DESCRIPTION: Ensure that when the /hello page is opened with a trailing URL value that the message "Hello CS 1632, from CAT!" is displayed
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/CAT"
+EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from CAT!"
+
+IDENTIFIER: HELLO-EXTED-Cat-TEST
+DESCRIPTION: Ensure that when the /hello page is opened with a trailing URL value that the message "Hello CS 1632, from Cat!" is displayed
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/Cat"
+EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from Cat!"
+
+IDENTIFIER: HELLO-EXTED-98ct1-TEST
+DESCRIPTION: Ensure that when the /hello page is opened with a trailing URL value that the message "Hello CS 1632, from 98ct1!" is displayed
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/98ct1"
+EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from 98ct1!"
+
+IDENTIFIER: HELLO-EXTED-*-TEST
+DESCRIPTION: Ensure that when the /hello page is opened with a trailing URL value that the message "Hello CS 1632, from *!" is displayed
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/*"
+EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from *!"
+
+-----------------------------------------------------------------------------------------29

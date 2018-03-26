@@ -224,3 +224,9 @@ EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/*"
 EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from *!"
 
 -----------------------------------------------------------------------------------------29
+
+IDENTIFIER: NUMBERED-LIST-TEST
+DESCRIPTION: Ensure that the 1., 2., and 3. are present for the ordered list
+PRECONDITION: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Click on the Cathedral Pics Link
+EXPECTED BEHAVIOS: A numbered list of 3 images is displayed.

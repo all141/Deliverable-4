@@ -94,13 +94,13 @@ EXECUTION STEPS: Click on input bar
                     click submit
 EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 5 is 8!"
 
-IDENTIFIER: FIB-100-TEST*************************************INCOMPLETE
-DESCRIPTION: Ensure the Fibonacci Page returns IDK when calculating fibonacci of 100
+IDENTIFIER: FIB-100-TEST
+DESCRIPTION: Ensure the Fibonacci Page returns 573147844013817084101 when calculating fibonacci of 100
 PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fib"
 EXECUTION STEPS: Click on input bar
                     enter 100
                     click submit
-EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 5 is IDK!"
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 100 is 573147844013817084101!"
 ---------------------------------------------------------------------------------------13
 
 

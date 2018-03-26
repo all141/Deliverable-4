@@ -103,6 +103,69 @@ EXECUTION STEPS: Click on input bar
 EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 100 is 573147844013817084101!"
 ---------------------------------------------------------------------------------------13
 
+IDENTIFIER: FIB-0-TEST
+DESCRIPTION: Ensure the Fibonacci Page return 1 when calculating fibonacci of 0
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Chick on input bar
+                  Enter 0
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 0 is 1!"
 
+IDENTIFIER: FACT-0-TEST
+DESCRIPTION: Ensure the Factorial Page return 1 when calculating factorial of 0
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fact"
+EXECUTION STEPS: Chick on input bar
+                  Enter 0
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Factorial of 0 is 1!"
 
+IDENTIFIER: FIB-101-TEST
+DESCRIPTION: Ensure the Fibonacci Page return 1 when calculating fibonacci of 101
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Chick on input bar
+                  Enter 101
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 101 is 1!"
+
+IDENTIFIER: FACT-101-TEST
+DESCRIPTION: Ensure the Factorial Page return 1 when calculating factorial of 101
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fact"
+EXECUTION STEPS: Chick on input bar
+                  Enter 101
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Factorial of 101 is 1!"
+
+IDENTIFIER: FIB-NEG-10-TEST
+DESCRIPTION: Ensure the Fibonacci Page return 1 when calculating fibonacci of -10
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Chick on input bar
+                  Enter -10
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of -10 is 1!"
+
+IDENTIFIER: FACT-NEG-10-TEST
+DESCRIPTION: Ensure the Factorial Page return 1 when calculating factorial of -10
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fact"
+EXECUTION STEPS: Chick on input bar
+                  Enter -10
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Factorial of -10 is 1!"
+
+IDENTIFIER: FIB-1000-TEST
+DESCRIPTION: Ensure the Fibonacci Page return 1 when calculating fibonacci of 1000
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fib"
+EXECUTION STEPS: Chick on input bar
+                  Enter 1000
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 1000 is 1!"
+
+IDENTIFIER: FACT-1000-TEST
+DESCRIPTION: Ensure the Factorial Page return 1 when calculating factorial of 1000
+PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/fact"
+EXECUTION STEPS: Chick on input bar
+                  Enter 1000
+                  Click Submit
+EXPECTED BEHAVIOR: Screen displays: "Factorial of 1000 is 1!"
+
+---------------------------------------------------------------------------------------------21
 

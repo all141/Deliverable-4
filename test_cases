@@ -13,7 +13,7 @@ DESCRIPTION: Ensure the text
 PRECONDITIONS: ON HOMEPAGE
 EXECUTION STEPS: assertTextPresent(Used for CS1632 Software Quality Assurance, taught by Bill Laboon)
 EXPECTED BEHAVIOR: Text is present.
-----------------------------------------------------------------------------------------------------  2
+
 IDENTIFIER: LINKBAR-HOMEPAGE-TEST
 DESCRIPTION: Ensure the link
                "CS1632 D3 Home" links to "https://cs1632ex.herokuapp.com/"
@@ -53,7 +53,7 @@ PRECONDITIONS:ON HOMEPAGE
 EXECUTION STEPS: Click on "Fibonnaci"
                     assertLocation(https://cs1632ex.herokuapp.com/fib)
 EXPECTED BEHAVIOR: Current URL is "https://cs1632ex.herokuapp.com/fib"
-------------------------------------------------------------------------------------7
+
 IDENTIFIER: FACT-ONE-TEST
 DESCRIPTION: Ensure the Factorial Page returns 1 when calculating factorial of 1
 PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fact"
@@ -76,8 +76,8 @@ PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fact"
 EXECUTION STEPS: Click on input bar
                     enter 100
                     click submit
-EXPECTED BEHAVIOR: Screen displays: "Factorial of 100 is [100!]!"
--------------------------------------------------------------------------------------------10
+EXPECTED BEHAVIOR: Screen displays: "Factorial of 100 is 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000!"
+
 IDENTIFIER: FIB-ONE-TEST
 DESCRIPTION: Ensure the Fibonacci Page returns 1 when calculating fibonacci of 1
 PRECONDITIONS:ON "https://cs1632ex.herokuapp.com/fib"
@@ -101,7 +101,6 @@ EXECUTION STEPS: Click on input bar
                     enter 100
                     click submit
 EXPECTED BEHAVIOR: Screen displays: "Fibonacci of 100 is 573147844013817084101!"
----------------------------------------------------------------------------------------13
 
 IDENTIFIER: FIB-0-TEST
 DESCRIPTION: Ensure the Fibonacci Page return 1 when calculating fibonacci of 0
@@ -183,15 +182,11 @@ EXECUTION STEPS: Click in input bar
                   Click Submit
 EXPECTED BEHAVIOR: Screen Displays "Factorial of String is 1!"
 
----------------------------------------------------------------------------------------------23
-
 IDENTIFIER: HELLO-MESSAGE-TEST
 DESCRIPTION: Ensure that the when the user open the /hello page without a trailing URL value that the message "Hello CS1632, from Prof. Laboon!" is displayed
 PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
 EXECUTION STEPS: Click on the Hello link at the top of the page
 EXPECTED BEHAVIOR: Screen displays: "Hello CS1632, from Prof. Laboon!"
-
-----------------------------------------------------------------------------------------------24
 
 IDENTIFIER: HELLO-EXTED-1234-TEST
 DESCRIPTION: Ensure that when the /hello page is opened with a numeric trailing URL value that the message "Hello CS 1632, from 1234!" is displayed
@@ -223,10 +218,23 @@ PRECONDITIONS: ON "https://cs1632ex.herokuapp.com/"
 EXECUTION STEPS: Load "https://cs1632ex.herokuapp.com/hello/*"
 EXPECTED BEHAVIOR: Screen displays: "Hello CS 1632, from *!"
 
------------------------------------------------------------------------------------------29
-
 IDENTIFIER: NUMBERED-LIST-TEST
 DESCRIPTION: Ensure that the 1., 2., and 3. are present for the ordered list
 PRECONDITION: ON "https://cs1632ex.herokuapp.com/"
 EXECUTION STEPS: Click on the Cathedral Pics Link
 EXPECTED BEHAVIOS: A numbered list of 3 images is displayed.
+
+
+IDENTIFIER: IMAGES-VISIBLE
+DESCRIPTION: Ensure that the three images of cathedral are visible on the page
+PRCONDITION: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Click on the Cathedral Pics Link
+EXPECTED BEHAVIORS: THe Sunny Cathedral Picture is visible.  The Aplenglow Cathedral Image is visible.  The Old Cathedral images is visible.
+
+IDENTIFIER: IMAGES-IN-LIST
+DESCRIPTION: Ensure that the three images of cathedral are in the list
+PRCONDITION: ON "https://cs1632ex.herokuapp.com/"
+EXECUTION STEPS: Click on the Cathedral Pics Link
+EXPECTED BEHAVIORS: THe Sunny Cathedral Picture is visible in the first element of the list.
+                    The Aplenglow Cathedral Image is visible in the second element of the list.
+                    The Old Cathedral images is visible in the third element of the list.
